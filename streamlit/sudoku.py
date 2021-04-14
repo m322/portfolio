@@ -31,6 +31,6 @@ else:
     sol_df = pd.DataFrame(data=df.loc[k, n], index=idx, columns=cols)
     st.dataframe(sol_df)
 
-HtmlFile = open("ad.html", 'r', encoding='utf-8')
+HtmlFile = open("./ad.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
 components.html(source_code)
