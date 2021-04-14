@@ -1,3 +1,4 @@
+import streamlit.components.v1 as components
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -29,3 +30,7 @@ else:
     idx = [f'sol_{v}' for v in range(1, len(df.loc[k, n]) + 1)]
     sol_df = pd.DataFrame(data=df.loc[k, n], index=idx, columns=cols)
     st.dataframe(sol_df)
+
+HtmlFile = open("ad.html", 'r', encoding='utf-8')
+source_code = HtmlFile.read()
+components.html(source_code)
