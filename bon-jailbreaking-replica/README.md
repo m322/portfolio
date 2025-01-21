@@ -1,6 +1,6 @@
 # Best-of-N Jailbreaking on smaller models
 
-This is the code for the replication project described [here](add missing link).
+This is the code for the replication project described [here](https://m322.github.io/2025/01/21/bon-jailbreaking-smaller-models.html).
 
 The prerequisites are:
 * [Ollama](https://ollama.com/) installed locally and running the target models;
